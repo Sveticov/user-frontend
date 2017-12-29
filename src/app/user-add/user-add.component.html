@@ -1,0 +1,33 @@
+<!--<p>-->
+  <!--user-add works!-->
+<!--</p>-->
+<div class="container">
+  <div class="row">
+    <form>
+      <div class="form-group">
+        <label for="firstNane">First Name:</label>
+        <input type="text" class="form-control" [(ngModel)]="addNewUser._firstNane" name="firstNane" id="firstNane" required  placeholder="You Name">
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" class="form-control" [(ngModel)]="addNewUser._lastName" name="lastName" id="lastName" required  placeholder="You Last Name">
+      </div>
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" class="form-control" [(ngModel)]="addNewUser._age" name="age" id="age" required  placeholder="You Age Example 30">
+      </div>
+      <div class="form-group">
+        <label for="sex">Sex:</label>
+        <select class="form-control" [(ngModel)]="addNewUser._sex" name="sex" required  id="sex">
+          <option>man</option>
+          <option>female</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="mail">Mail:</label>
+        <input type="text" class="form-control" [(ngModel)]="addNewUser._mail" name="mail" id="mail" required  placeholder="Example you@example.com">
+      </div>
+      <button class="btn btn-outline-dark" (click)="addNewUserClick()">Add User</button>
+    </form>
+  </div>
+</div>
